@@ -157,7 +157,7 @@ def generate_launch_description():
         launch_arguments=[
             ('ign_args', [
                 LaunchConfiguration('world'), '.sdf',
-                ' -v 4',
+                ' -s -r -v 4',
                 ' --gui-config ', PathJoinSubstitution(
                     [pkg_turtlebot4_ignition_bringup,
                      'gui',
